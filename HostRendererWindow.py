@@ -16,6 +16,7 @@ def defineJobPath():
 
     jobPath = (RENDER_DIR + rawFileName + '_Render\\')
     return jobPath
+
 #---------------------------------------------------------------------
 def archiveAndCopy():
     scenePath = cmds.file(q=True, sn=True)
@@ -60,7 +61,6 @@ def sendRender():
     generateRenderCommand(outStartFrame[0], outEndFrame[0], outCustomFlag)
     cmds.deleteUI('DistrRendWin')
 
-
 #---------------------------------------------------------------------
 def showUI():
     DRW = 'DistrRendWin'
@@ -89,5 +89,4 @@ def showUI():
     cmds.showWindow()
 
 #---------------------------------------------------------------------
-
 showUI()

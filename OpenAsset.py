@@ -9,9 +9,8 @@ GLOBAL_ASSETS_DIR = 'H:/folder/'
 ASSET_LIST = ['Asset0' ,'Asset1' ,'Asset2']
 
 assetListLen = len(ASSET_LIST)
-#------------------------------------------------------
-#
 
+#------------------------------------------------------
 def showUI():
     DRW = 'AssetSelectionWindow'
 
@@ -40,8 +39,6 @@ def showUI():
     cmds.showWindow()
 
 #------------------------------------------------------
-#
-
 def openAsset(SelectedItem, doSave):
 
     assetProjDir = (GLOBAL_ASSETS_DIR + SelectedItem + '/')
@@ -55,5 +52,4 @@ def openAsset(SelectedItem, doSave):
     cmds.file(assetFileName, open=True, force=True)
 
 #------------------------------------------------------
-
 showUI()
