@@ -1,4 +1,5 @@
 # playblast shaded and shaded wireframe (200 frames)
+
 import maya.cmds as cmds
 import os
 

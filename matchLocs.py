@@ -1,4 +1,5 @@
 # create Locator(s) at selected object(s)
+
 import maya.cmds as cmds
 
 targetObjs = cmds.ls(selection=True)
